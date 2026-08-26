@@ -304,6 +304,7 @@ JOIN cleaned_orders o
 GROUP BY c.customer_id, c.customer_city, c.customer_state
 ORDER BY order_count DESC
 LIMIT 10;
+
 /* RESULT -------------------------------------------------------------------------------------------------------------------------
 yZxp4LnOBCE6	sao paulo	            SP	1
 YZxSl4nUGdoQ	araxa	                MG	1
@@ -342,6 +343,7 @@ SELECT
     ) AS on_time_delivery_rate
 FROM cleaned_orders
 WHERE order_delivered_timestamp IS NOT NULL;
+
 /* RESULT -------------------------------------------------------------------------------------------------------------------------
 delivered_orders   on_time_orders   on_time_delivery_rate
 89316	              82578	              92.46
@@ -351,3 +353,22 @@ This indicates that the company generally meets customer delivery expectations, 
 remaining 7.54% of late deliveries.
 ----------------------------------------------------------------------------------------------------------------------------------*/
 
+-- 10. Which payment methods are most popular and generate the highest payment value?
+SELECT
+    payment_type,
+    COUNT(*) AS payment_count,
+    ROUND(SUM(payment_value), 2) AS total_payment_value,
+    ROUND(AVG(payment_value), 2) AS average_payment_value
+FROM cleaned_payments
+GROUP BY payment_type
+ORDER BY total_payment_value DESC;
+
+/* RESULT -------------------------------------------------------------------------------------------------------------------------
+payment_type  payment_count  total_payment_value  average_payment_value
+credit_card		65814			17512576.65				266.09
+wallet			17302			4642341.69				268.31
+voucher			4911			1523103.46				310.14
+debit_card		1289			317363.76				246.21
+------ Observation ---------------------------------------------------------------------------------------------------------------
+Credit card is the most popular payment method, with 65,814 payments and the highest total payment value of 17.51M. Wallet is the 
+second most used method, while vouchers have the highest average payment value at 310.14.
