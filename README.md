@@ -73,6 +73,10 @@ The analysis is divided into five major areas.
 
 ---
 
+# Dashboard
+<img width="1209" height="692" alt="image" src="https://github.com/user-attachments/assets/e650cc45-f34e-4db5-b6b1-870bae3a80f5" />
+
+
 # Project Workflow
 
 ```text
@@ -93,3 +97,6 @@ DAX Measures
 Interactive Dashboard
         ↓
 Business Insights & Recommendations
+
+
+
