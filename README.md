@@ -1,6 +1,6 @@
-# 🛒 E-Commerce Sales & Customer Analytics
+# E-Commerce Sales & Customer Analytics
 
-## 📊 Project Overview
+## Project Overview
 
 This project analyzes e-commerce sales, customer purchasing behavior, product performance, order trends, and payment patterns to identify opportunities for **increasing revenue and improving customer retention**.
 
@@ -10,7 +10,7 @@ The project follows an end-to-end data analytics workflow:
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 
 The e-commerce company wants to understand its sales and customer behavior in order to:
 
@@ -33,34 +33,34 @@ The e-commerce company wants to understand its sales and customer behavior in or
 
 The analysis is divided into five major areas.
 
-## 1. 💰 Sales Analysis
+## 1. Sales Analysis
 
 1. How does revenue change over time?
 2. Which payment methods generate the highest revenue?
 3. Which customer states generate the highest revenue?
 
-## 2. 👥 Customer Analysis
+## 2. Customer Analysis
 
 4. What percentage of customers are repeat customers?
 5. Do repeat customers generate more revenue than one-time customers?
 
-## 3. 📦 Product Analysis
+## 3. Product Analysis
 
 6. Which product categories generate the most revenue?
 7. Which products contribute most to overall sales?
 
-## 4. 🚚 Order Analysis
+## 4. Order Analysis
 
 8. What is the distribution of order statuses?
 9. How does order performance change over time?
 
-## 5. 💳 Payment Analysis
+## 5. Payment Analysis
 
 10. Which payment methods are most popular and generate the highest payment value?
 
 ---
 
-# 🛠️ Tools & Technologies
+# Tools & Technologies
 
 | Tool | Purpose |
 |------|---------|
@@ -73,7 +73,7 @@ The analysis is divided into five major areas.
 
 ---
 
-# 🔄 Project Workflow
+# Project Workflow
 
 ```text
 Raw E-Commerce Dataset
