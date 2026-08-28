@@ -29,7 +29,7 @@ The e-commerce company wants to understand its sales and customer behavior in or
 
 ---
 
-# 🔎 Business Analysis Questions
+# Business Analysis Questions
 
 The analysis is divided into five major areas.
 
